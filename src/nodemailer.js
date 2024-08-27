@@ -35,7 +35,7 @@ export const sendResetPasswordEmail = (toEmail, token) => {
         subject: 'Restablecimiento de Contraseña',
         html: `<h1>Restablecimiento de Contraseña</h1>
                 <p>Haz clic en el siguiente enlace para restablecer tu contraseña:</p>
-                <a href="http://localhost:8080/resetpassword/${token}">Restablecer Contraseña</a>`,
+                <a href="https://backend-production-coder.up.railway.app/resetpassword/${token}">Restablecer Contraseña</a>`,
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {

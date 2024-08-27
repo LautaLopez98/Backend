@@ -72,7 +72,7 @@ export const initPassport = () =>{
         {
             clientID:config.CLIENT_ID,
             clientSecret:config.CLIENT_SECRET,
-            callbackURL:"https://proyecto-final-backend-production-53cd.up.railway.app/api/sessions/cbGitHub"
+            callbackURL:"https://backend-production-coder.up.railway.app/api/sessions/cbGitHub"
         },
         async(tokenAcceso, tokenRefresh, profile, done)=>{
             try {
